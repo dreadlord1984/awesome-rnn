@@ -2,18 +2,18 @@
 
 A curated list of resources dedicated to recurrent neural networks (closely related to *deep learning*).
 
-Maintainers - [Myungsub Choi](https://github.com/myungsub), [Jiwon Kim](https://github.com/kjw0612), [Taeksoo Kim](https://github.com/jazzsaxmafia)
+Maintainers - [Myungsub Choi](https://github.com/myungsub), [Taeksoo Kim](https://github.com/jazzsaxmafia), [Jiwon Kim](https://github.com/kjw0612)
 
-We have pages for other topics: [awesome-deep-vision](http://jiwonkim.org/awesome-deep-vision/), [awesome-random-forest](http://jiwonkim.org/awesome-random-forest/)
+We have pages for other topics: [awesome-deep-vision](https://github.com/kjw0612/awesome-deep-vision), [awesome-random-forest](https://github.com/kjw0612/awesome-random-forest)
 
 
 ## Contributing
-Please feel free to [pull requests](https://github.com/kjw0612/awesome-deep-vision/pulls), email Myungsub Choi (myungsub91@gmail.com) or join our chats to add links.
+Please feel free to [pull requests](https://github.com/kjw0612/awesome-rnn/pulls), email Myungsub Choi (cms6539@gmail.com) or join our chats to add links.
 
 [![Join the chat at https://gitter.im/kjw0612/awesome-rnn](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/kjw0612/awesome-rnn?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
 ## Sharing
-+ [Share on Twitter](http://twitter.com/home?status=http://jiwonkim.org/awesome-rnn%0AResources for Recurrent Neural Networks)
++ [Share on Twitter](http://twitter.com/home?status=http://jiwonkim.org/awesome-rnn%0AResources%20for%20Recurrent%20Neural%20Networks)
 + [Share on Facebook](http://www.facebook.com/sharer/sharer.php?u=https://jiwonkim.org/awesome-rnn)
 + [Share on Google Plus](http://plus.google.com/share?url=https://jiwonkim.org/awesome-rnn)
 + [Share on LinkedIn](http://www.linkedin.com/shareArticle?mini=true&url=https://jiwonkim.org/awesome-rnn&title=Awesome%20Recurrent%20Neural&Networks&summary=&source=)
@@ -75,15 +75,20 @@ Please feel free to [pull requests](https://github.com/kjw0612/awesome-deep-visi
 * [Caffe](https://github.com/BVLC/caffe) - C++ with MATLAB/Python wrappers
   * [LRCN](http://jeffdonahue.com/lrcn/) by Jeff Donahue
 * [Torch](http://torch.ch/) - Lua
+  * [torchnet](https://github.com/torchnet/torchnet) : modular framework that enables building neural network models
   * [char-rnn](https://github.com/karpathy/char-rnn) by Andrej Karpathy : multi-layer RNN/LSTM/GRU for training/sampling from character-level language models
   * [torch-rnn](https://github.com/jcjohnson/torch-rnn) by Justin Johnson : reusable RNN/LSTM modules for torch7 - much faster and memory efficient reimplementation of char-rnn
   * [neuraltalk2](https://github.com/karpathy/neuraltalk2) by Andrej Karpathy : Recurrent Neural Network captions image, much faster and better version of the original [neuraltalk](https://github.com/karpathy/neuraltalk)
   * [LSTM](https://github.com/wojzaremba/lstm) by Wojciech Zaremba : Long Short Term Memory Units to train a language model on word level Penn Tree Bank dataset
   * [Oxford](https://github.com/oxford-cs-ml-2015) by Nando de Freitas : Oxford Computer Science - Machine Learning 2015 Practicals
   * [rnn](https://github.com/Element-Research/rnn) by Nicholas Leonard : general library for implementing RNN, LSTM, BRNN and BLSTM (highly unit tested).
+* [PyTorch](http://pytorch.org/) - Python
+  * [Word-level RNN example](https://github.com/pytorch/examples/tree/master/word_language_model) : demonstrates PyTorch's built in RNN modules for language modeling
+  * [Practical PyTorch tutorials](https://github.com/spro/practical-pytorch) by Sean Robertson : focuses on using RNNs for Natural Language Processing
+  * [Deep Learning For NLP In PyTorch](https://github.com/rguthrie3/DeepLearningForNLPInPytorch) by Robert Guthrie : written for a Natural Language Processing class at Georgia Tech
 * [DL4J](http://deeplearning4j.org/) by [Skymind](http://www.skymind.io/) : Deep Learning library for Java, Scala & Clojure on Hadoop, Spark & GPUs
   * [Documentation](http://deeplearning4j.org/) (Also in [Chinese](http://deeplearning4j.org/zh-index.html), [Japanese](http://deeplearning4j.org/ja-index.html), [Korean](http://deeplearning4j.org/kr-index.html)) : [RNN](http://deeplearning4j.org/usingrnns.html), [LSTM](http://deeplearning4j.org/lstm.html)
-  * [rnn examples](https://github.com/deeplearning4j/dl4j-0.4-examples/tree/master/src/main/java/org/deeplearning4j/examples/rnn)
+  * [rnn examples](https://github.com/deeplearning4j/dl4j-examples/tree/master/dl4j-examples/src/main/java/org/deeplearning4j/examples/recurrent)
 * Etc.
   * [Neon](http://neon.nervanasys.com/docs/latest/index.html): new deep learning library in Python, with support for RNN/LSTM, and a fast image captioning model
   * [Brainstorm](https://github.com/IDSIA/brainstorm): deep learning library in Python, developed by IDSIA, thereby including various recurrent structures
@@ -140,6 +145,8 @@ Please feel free to [pull requests](https://github.com/kjw0612/awesome-deep-visi
   * Lingpeng Kong, Chris Dyer, Noah Smith, "Segmental Recurrent Neural Networks", ICLR 2016.
 * Seq2seq for Sets [[Paper](http://arxiv.org/pdf/1511.06391v4.pdf)]
   * Oriol Vinyals, Samy Bengio, Manjunath Kudlur, "Order Matters: Sequence to sequence for sets", ICLR 2016.
+* Hierarchical Recurrent Neural Networks [[Paper](http://arxiv.org/abs/1609.01704)]
+  * Junyoung Chung, Sungjin Ahn, Yoshua Bengio, "Hierarchical Multiscale Recurrent Neural Networks", arXiv:1609.01704
 
 #### Memory
 
@@ -214,10 +221,14 @@ Please feel free to [pull requests](https://github.com/kjw0612/awesome-deep-visi
 * Lifeng Shang, Zhengdong Lu, and Hang Li, *Neural Responding Machine for Short-Text Conversation*, arXiv:1503.02364 / ACL 2015 [[Paper](http://arxiv.org/pdf/1503.02364)]
 * Oriol Vinyals and Quoc V. Le, *A Neural Conversational Model*, arXiv:1506.05869 [[Paper](http://arxiv.org/pdf/1506.05869)]
 * Ryan Lowe, Nissan Pow, Iulian V. Serban, and Joelle Pineau, *The Ubuntu Dialogue Corpus: A Large Dataset for Research in Unstructured Multi-Turn Dialogue Systems*, arXiv:1506.08909 [[Paper](http://arxiv.org/pdf/1506.08909)]
+* Jesse Dodge, Andreea Gane, Xiang Zhang, Antoine Bordes, Sumit Chopra, Alexander Miller, Arthur Szlam, and Jason Weston, *Evaluating Prerequisite Qualities for Learning End-to-End Dialog Systems*, arXiv:1511.06931 [[Paper](http://arxiv.org/pdf/1511.06931)]
+* Jason Weston, *Dialog-based Language Learning*, arXiv:1604.06045, [[Paper](http://arxiv.org/pdf/1604.06045)]
+* Antoine Bordes and Jason Weston, *Learning End-to-End Goal-Oriented Dialog*, arXiv:1605.07683 [[Paper](http://arxiv.org/pdf/1605.07683)]
 
 #### Question Answering
-* FAIR 
+* FAIR
   * Jason Weston, Antoine Bordes, Sumit Chopra, Tomas Mikolov, and Alexander M. Rush, *Towards AI-Complete Question Answering: A Set of Prerequisite Toy Tasks*, arXiv:1502.05698 [[Web](https://research.facebook.com/researchers/1543934539189348)] [[Paper](http://arxiv.org/pdf/1502.05698.pdf)]
+  * Antoine Bordes, Nicolas Usunier, Sumit Chopra, and Jason Weston, *Simple Question answering with Memory Networks*, arXiv:1506.02075 [[Paper](http://arxiv.org/abs/1506.02075)]
   * Felix Hill, Antoine Bordes, Sumit Chopra, Jason Weston, "The Goldilocks Principle: Reading Children's Books with Explicit Memory Representations", ICLR 2016 [[Paper](http://arxiv.org/abs/1511.02301)]
 * DeepMind + Oxford [[Paper](http://arxiv.org/pdf/1506.03340.pdf)]
   * Karl M. Hermann, Tomas Kocisky, Edward Grefenstette, Lasse Espeholt, Will Kay, Mustafa Suleyman, and Phil Blunsom, *Teaching Machines to Read and Comprehend*, arXiv:1506.03340 / NIPS 2015
@@ -325,6 +336,14 @@ Please feel free to [pull requests](https://github.com/kjw0612/awesome-deep-visi
   * Mengye Ren, Ryan Kiros, and Richard Zemel, *Exploring Models and Data for Image Question Answering*, arXiv:1505.02074 / ICML 2015 deep learning workshop
 * Baidu + UCLA [[Paper](http://arxiv.org/pdf/1505.05612)] [[Dataset]()]
   * Hauyuan Gao, Junhua Mao, Jie Zhou, Zhiheng Huang, Lei Wang, and Wei Xu, *Are You Talking to a Machine? Dataset and Methods for Multilingual Image Question Answering*, arXiv:1505.05612 / NIPS 2015
+* SNU + NAVER [[Paper](http://arxiv.org/abs/1606.01455)]
+  * Jin-Hwa Kim, Sang-Woo Lee, Dong-Hyun Kwak, Min-Oh Heo, Jeonghee Kim, Jung-Woo Ha, Byoung-Tak Zhang, *Multimodal Residual Learning for Visual QA*, arXiv:1606:01455
+* UC Berkeley + Sony [[Paper](https://arxiv.org/pdf/1606.01847)]
+  * Akira Fukui, Dong Huk Park, Daylen Yang, Anna Rohrbach, Trevor Darrell, and Marcus Rohrbach, *Multimodal Compact Bilinear Pooling for Visual Question Answering and Visual Grounding*, arXiv:1606.01847
+* Postech [[Paper](http://arxiv.org/pdf/1606.03647.pdf)]
+  * Hyeonwoo Noh and Bohyung Han, *Training Recurrent Answering Units with Joint Loss Minimization for VQA*, arXiv:1606.03647
+* SNU + NAVER [[Paper](http://arxiv.org/abs/1610.04325)]
+  * Jin-Hwa Kim, Kyoung Woon On, Jeonghee Kim, Jung-Woo Ha, Byoung-Tak Zhang, *Hadamard Product for Low-rank Bilinear Pooling*, arXiv:1610.04325
 * Video QA
   * CMU + UTS [[paper](http://arxiv.org/abs/1511.04670)]
     * Linchao Zhu, Zhongwen Xu, Yi Yang, Alexander G. Hauptmann, Uncovering Temporal Context for Video Question and Answering, arXiv:1511.04670
@@ -344,7 +363,7 @@ Please feel free to [pull requests](https://github.com/kjw0612/awesome-deep-visi
 * Scott Reed and Nando de Freitas, *Neural Programmer-Interpreters*, arXiv:1511.06279 [[Paper](http://arxiv.org/pdf/1511.06279.pdf)]
 * Karol Kurach, Marcin Andrychowicz, and Ilya Sutskever, *Neural Random-Access Machines*, arXiv:1511.06392 [[Paper](http://arxiv.org/pdf/1511.06392.pdf)]
 * Łukasz Kaiser and Ilya Sutskever, *Neural GPUs Learn Algorithms*, arXiv:1511.08228 [[Paper](http://arxiv.org/pdf/1511.08228.pdf)]
-* Ethan Caballero, *Skip-Thought Memory Networks*, arXiv:1511.6420 [[Paper](arxiv.org/pdf/1511.06420.pdf)]
+* Ethan Caballero, *Skip-Thought Memory Networks*, arXiv:1511.6420 [[Paper](https://pdfs.semanticscholar.org/6b9f/0d695df0ce01d005eb5aa69386cb5fbac62a.pdf)]
 * Wojciech Zaremba, Tomas Mikolov, Armand Joulin, and Rob Fergus, *Learning Simple Algorithms from Examples*, arXiv:1511.07275 [[Paper](http://arxiv.org/pdf/1511.07275.pdf)]
 
 ### Robotics
@@ -375,11 +394,21 @@ Recurrent Neural Networks*, arXiv:1506.03099 / NIPS 2015 [[Paper](http://arxiv.o
   * [Flickr 8k](http://nlp.cs.illinois.edu/HockenmaierGroup/Framing_Image_Description/KCCA.html)
   * [Flickr 30k](http://shannon.cs.illinois.edu/DenotationGraph/)
   * [Microsoft COCO](http://mscoco.org/home/)
+* Question Answering
+  * [The bAbI Project](http://fb.ai/babi) - Dataset for text understanding and reasoning, by Facebook AI Research. Contains:
+    * The (20) QA bAbI tasks - [[Paper](http://arxiv.org/abs/1502.05698)]
+    * The (6) dialog bAbI tasks - [[Paper](http://arxiv.org/abs/1605.07683)]
+    * The Children's Book Test - [[Paper](http://arxiv.org/abs/1511.02301)]
+    * The Movie Dialog dataset - [[Paper](http://arxiv.org/abs/1511.06931)]
+    * The MovieQA dataset - [[Data](http://www.thespermwhale.com/jaseweston/babi/movie_dialog_dataset.tgz)]
+    * The Dialog-based Language Learning dataset - [[Paper](http://arxiv.org/abs/1604.06045)]
+    * The SimpleQuestions dataset - [[Paper](http://arxiv.org/abs/1506.02075)]
+  * [SQuAD](https://stanford-qa.com/) - Stanford Question Answering Dataset :  [[Paper](http://arxiv.org/pdf/1606.05250)]
 * Image Question Answering
   * [DAQUAR](https://www.mpi-inf.mpg.de/departments/computer-vision-and-multimodal-computing/research/vision-and-language/visual-turing-challenge/) - built upon [NYU Depth v2](http://cs.nyu.edu/~silberman/datasets/nyu_depth_v2.html) by N. Silberman et al.
   * [VQA](http://www.visualqa.org/) - based on [MSCOCO](http://mscoco.org/) images
   * [Image QA](http://www.cs.toronto.edu/~mren/imageqa/data/cocoqa/) - based on MSCOCO images
-  * [Multilingual Image QA] - built from scratch by Baidu - in Chinese, with English translation
+  * [Multilingual Image QA](http://idl.baidu.com/FM-IQA.html) - built from scratch by Baidu - in Chinese, with English translation
 * Action Recognition
   * [THUMOS](http://www.thumos.info/home.html) : Large-scale action recognition dataset
   * [MultiTHUMOS](http://ai.stanford.edu/~syyeung/resources/multithumos.zip) : Extension of THUMOS '14 action detection dataset with dense multilabele annotation
@@ -388,11 +417,16 @@ Recurrent Neural Networks*, arXiv:1506.03099 / NIPS 2015 [[Paper](http://arxiv.o
 * [The Unreasonable Effectiveness of RNNs](http://karpathy.github.io/2015/05/21/rnn-effectiveness/) by [Andrej Karpathy](http://cs.stanford.edu/people/karpathy/)
 * [Understanding LSTM Networks](http://colah.github.io/posts/2015-08-Understanding-LSTMs/) in [Colah's blog](http://colah.github.io/)
 * [WildML](http://www.wildml.com/) blog's RNN tutorial [[Part1](http://www.wildml.com/2015/09/recurrent-neural-networks-tutorial-part-1-introduction-to-rnns/)], [[Part2](http://www.wildml.com/2015/09/recurrent-neural-networks-tutorial-part-2-implementing-a-language-model-rnn-with-python-numpy-and-theano/)], [[Part3](http://www.wildml.com/2015/10/recurrent-neural-networks-tutorial-part-3-backpropagation-through-time-and-vanishing-gradients/)], [[Part4](http://www.wildml.com/2015/10/recurrent-neural-network-tutorial-part-4-implementing-a-grulstm-rnn-with-python-and-theano/)]
+* [RNNs in Tensorflow, a Practical Guide and Undocumented Features](http://www.wildml.com/2016/08/rnns-in-tensorflow-a-practical-guide-and-undocumented-features/)
 * [Optimizing RNN Performance](https://svail.github.io/) from Baidu's Silicon Valley AI Lab.
 * [Character Level Language modelling using RNN](http://nbviewer.jupyter.org/gist/yoavg/d76121dfde2618422139) by Yoav Goldberg
 * [Implement an RNN in Python](http://peterroelants.github.io/posts/rnn_implementation_part01/).
 * [LSTM Backpropogation](http://arunmallya.github.io/writeups/nn/lstm/index.html#/)
+* [Introduction to Recurrent Networks in TensorFlow](https://danijar.com/introduction-to-recurrent-networks-in-tensorflow/) by Danijar Hafner
+* [Variable Sequence Lengths in TensorFlow](https://danijar.com/variable-sequence-lengths-in-tensorflow/) by Danijar Hafner
+* [Written Memories: Understanding, Deriving and Extending the LSTM](http://r2rt.com/written-memories-understanding-deriving-and-extending-the-lstm.html) by Silviu Pitis
 
 ## Online Demos
 * Alex graves, hand-writing generation [[link](http://www.cs.toronto.edu/~graves/handwriting.html)]
 * Ink Poster: Handwritten post-it notes [[link](http://www.inkposter.com/?)]
+* LSTMVis: Visual Analysis for Recurrent Neural Networks [[link](http://lstm.seas.harvard.edu/)]
